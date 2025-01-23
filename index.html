@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=editor_choice"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Jewellery</title>
+  </head>
+  <body>
+    <div class="timecalladdress" id="startnavMain">
+      <div class="shopTiming">
+        <span
+          >Mon - Sun | <i class="fa-regular fa-clock"></i> 10:30 AM - 10:00
+          PM</span
+        >
+      </div>
+      <a href="tel:+919152527077" class="call-us"
+        ><i class="fa-solid fa-phone"></i> <span>+91 7304888579</span></a
+      >
+      <a href="#">
+        <i class="fa-solid fa-location-dot"></i
+        ><span>Shop no: 17, Naya Nagar, Mira road (E), 401107</span>
+      </a>
+    </div>
+    <header class="nameNav">
+      <h1>Precious</h1>
+      <h3>Jewellery Store</h3>
+      <i class="fa-solid fa-bars toggleBar" onclick="toggleBar()"></i>
+      <nav class="navBar" id="navBar">
+        <ul>
+          <li><a href="#startnavMain">Start</a></li>
+          <li><a href="#productBox">Products</a></li>
+          <li><a href="#newProduct">Latest Products</a></li>
+          <li><a href="#testinomials">Testinomial</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="heroSection">
+      <div class="imgPart hidden">
+        <img
+          src="images/bangleExclusivepngwing.png"
+          width="500"
+          alt="Ring Image"
+        />
+      </div>
+      <div class="contentPart hiddenContent">
+        <div class="headContentPart">
+          <strong>Gold</strong><br /><strong>Jewellery</strong>
+        </div>
+        <div class="secondContentPart">
+          <p>
+            Shine brighter with our exquisite gold jewelry,crafted for every
+            moment!
+          </p>
+        </div>
+      </div>
+      <a href="#productBox" class="adownArr">
+        <i class="fa-solid fa-arrow-down downArrPro"></i>
+      </a>
+    </section>
+
+    <!-- Variety of Product Showcase -->
+    <section class="varietyOfProduct" id="productBox">
+      <div class="productBox">
+        <img src="images/Banglepngwing.png" alt="bangles image" />
+      </div>
+      <div class="productBox">
+        <img src="images/Earingpngwing.png" alt="earring image" />
+      </div>
+      <div class="productBox necklace1">
+        <img src="images/necklace1.png" alt="necklace image" />
+      </div>
+    </section>
+
+    <!-- Modal 1 With Some Content -->
+
+    <div class="modalOneDiv">
+      <img src="images/modal.jpg" alt="modal Image" />
+      <div class="sideContentOfModalOne">
+        <strong
+          >Design <br />
+          <span>for</span> Love</strong
+        >
+        <p>
+          Discover a treasure trove of jewelry in our store, designed to
+          captivate and delight your other half. From timeless pieces to modern
+          designs, our collection offers stunning jewelry perfect for
+          day-to-night elegance, creating a dazzling diamond-inspired allure.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 2 With Some Content -->
+
+    <div class="modalTwoDiv">
+      <div class="contentpartMT">
+        <strong>
+          platinum <br />
+          collections
+        </strong>
+        <a href="#" class="contactmTD">Contact Us</a>
+      </div>
+      <img src="images/modal2pixelcut.png" alt="Modal Image" />
+    </div>
+
+    <!-- New Products -->
+
+    <section class="varietyOfProduct newProdustsSection" id="newProduct">
+      <div class="productBox newProductBox">
+        <img src="images/ring1.jpg" alt="bangles image" />
+        <div class="productContent">
+          <p>Band Ring in Platinum With Diamonds</p>
+          <strong>$399.00 – $699.00</strong>
+        </div>
+      </div>
+      <div class="productBox newProductBox">
+        <img src="images/ring2.jpg" alt="earring image" />
+        <div class="productContent">
+          <p>Classic Solitaire Ring with a Round Brilliant Diamond</p>
+          <strong>$199.00 – $399.00</strong>
+        </div>
+      </div>
+      <div class="productBox necklace1 newProductBox">
+        <img src="images/ring3.jpg" alt="necklace image" />
+        <div class="productContent">
+          <p>Radiant Diamond Eternity ring in Platinum</p>
+          <strong>$259.00 – $699.00</strong>
+        </div>
+      </div>
+      <div class="productBox necklace1 newProductBox">
+        <img src="images/ring4.jpg" alt="necklace image" />
+        <div class="productContent">
+          <p>Diamond Ring with a Contemporary Twist</p>
+          <strong>$150.00 – $699.00</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Stories -->
+    <section class="reviewSection" id="testinomials">
+      <strong class="headCustomerSories">Customer Stories</strong>
+      <div class="reviewHere">
+        <div class="testimonial-card">
+          <div class="user-info">
+            <span class="userProfileName" style="background-color: red">P</span>
+            <div>
+              <div class="name">Priya Sharma</div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-content">
+            I absolutely love the diamond necklace I purchased from here! The
+            design is so unique, and the craftsmanship is impeccable. The staff
+            was very helpful in guiding me to the perfect piece. Will definitely
+            shop here again!
+          </div>
+        </div>
+        <!--  -->
+        <div class="testimonial-card">
+          <div class="user-info">
+            <span class="userProfileName" style="background-color: green"
+              >R</span
+            >
+            <div>
+              <div class="name">Rahul Mehta</div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-content">
+            I bought a gold ring for my wife, and she was thrilled with it! The
+            quality is top-notch, and the packaging was elegant. The team even
+            helped me customize the ring with an engraving, which made it extra
+            special.
+          </div>
+        </div>
+        <!--  -->
+        <div class="testimonial-card">
+          <div class="user-info">
+            <span class="userProfileName" style="background-color: blue"
+              >A</span
+            >
+            <div>
+              <div class="name">Anjali Desai</div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-content">
+            This is my go-to place for all things jewelry! I recently bought a
+            pair of diamond earrings, and they are stunning. The attention to
+            detail and the friendly service make shopping here a delightful
+            experience every time.
+          </div>
+        </div>
+        <!--  -->
+        <div class="testimonial-card">
+          <div class="user-info">
+            <span class="userProfileName" style="background-color: violet"
+              >N</span
+            >
+            <div>
+              <div class="name">Neha Kapoor</div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="testimonial-content">
+            Amazing collection and excellent service! I was looking for a
+            platinum band, and they had so many beautiful options. The staff
+            patiently explained everything, from the quality to the
+            certification. Highly recommend this store for premium jewelry.
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <a class="viewAllReviews" target="_blank" href="#">View All Reviews</a>
+    </section>
+    <!-- Accordian -->
+
+    <strong class="faqs">FAQs</strong>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            What is the difference in cost between different materials like gold
+            and platinum?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Gold and platinum differ in price due to their rarity, durability,
+            and market value. Gold is typically more affordable and comes in
+            various karats (e.g., 18K, 22K), with each karat affecting the
+            price. Platinum, being denser and more durable, is generally more
+            expensive than gold and is highly resistant to tarnishing, making it
+            ideal for long-term wear. The final cost also depends on the weight,
+            design complexity, and whether the piece includes gemstones. Our
+            team can provide a detailed breakdown to help you make an informed
+            choice.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            What is your return or exchange policy?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            We want you to be completely satisfied with your purchase. If you’re
+            not happy with your item, you can return or exchange it within 7
+            days of purchase, provided it’s in its original condition and
+            packaging, with the receipt. Customized or engraved pieces are
+            non-refundable. For online orders, please contact our customer
+            support to initiate the return or exchange process. Terms and
+            conditions apply—please refer to our detailed policy on our website.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            How do I care for and clean my jewelry?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            To keep your jewelry looking its best, clean it regularly with a
+            soft, lint-free cloth to remove dirt and oils. For deeper cleaning,
+            use a mild soap solution with warm water and gently scrub with a
+            soft toothbrush. Avoid exposing your jewelry to harsh chemicals,
+            perfumes, or household cleaners, as they can damage the metal or
+            gemstones. Store each piece separately in a jewelry box or pouch to
+            prevent scratches. For professional cleaning or maintenance, visit
+            our store—we’re happy to help!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="FooterSection">
+      <div class="footerMain">
+        <div class="footerHead">
+          <h1>Precious</h1>
+          <span>Jewellery Store</span>
+          <p>
+            We create unique jewelry for those who appreciate proven quality and
+            exquisite style
+          </p>
+        </div>
+        <div class="bestSeller">
+          <strong class="bestSeller">Best Seller</strong>
+          <div class="best1">
+            <img src="images/ringWlp.jpg" width="100" alt="image" />
+            <p>
+              Rose Gold Ring with Sparkling Accent Diamonds
+              <span>$889 - $1,299</span>
+            </p>
+          </div>
+          <div class="best1">
+            <img src="images/ringWlp.jpg" width="100" alt="image" />
+            <p>
+              Rose Gold Ring with Sparkling Accent Diamonds
+              <span>$889 - $1,299</span>
+            </p>
+          </div>
+        </div>
+        <div class="tagsContent">
+          <strong>Tags</strong>
+          <div class="tags">
+            <span>gold</span>
+            <span>diamond</span>
+            <span>wedding</span>
+            <span>luxary</span>
+            <span>sale</span>
+            <span>new design</span>
+          </div>
+        </div>
+        <div class="sociols">
+          <strong>Socials</strong>
+          <div class="socialLinks">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&copy; Precious All Rights Reserved.</div>
+    </footer>
+
+    <a
+      href="https://wa.me/+919892042097?text=Hi"
+      target="_blank"
+      class="bottomWhatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+919892042097" class="bottomCallUs">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a class="gotoTop" href="#startnavMain">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </body>
+  <!--  -->
+  <script src="script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
