@@ -120,7 +120,7 @@ a {
     flex-direction: column;
   }
   .nameNav .navBar.navbarSmallDevice {
-    height: 220px;
+    height: 180px;
   }
 }
 /* Hero Section */
@@ -682,6 +682,7 @@ a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  z-index: 111;
 }
 
 .bottomWhatsapp {
@@ -715,6 +716,7 @@ a {
   padding: 5px 6px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4980392157);
   border-radius: 5px;
+  z-index: 111;
 }
 .gotoTop i {
   font-size: 1.7em;
