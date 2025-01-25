@@ -34,3 +34,17 @@ const scrollForTopBtn = () => {
     gotoTop.style.display = "none";
   }
 };
+
+let popupBeforePage = document.querySelector(".popupBeforePage");
+function hidescrollWith() {
+  document.body.classList.add("hide-scrollbar");
+  popupBeforePage.classList.add("dsplayVisible");
+  popupBeforePage.classList.add("scaleonpopupBeforePage");
+
+  setTimeout(() => {
+    document.body.classList.remove("hide-scrollbar");
+    popupBeforePage.classList.remove("dsplayVisible");
+    popupBeforePage.classList.remove("scaleonpopupBeforePage");
+  }, 3000);
+}
+hidescrollWith();

@@ -166,19 +166,19 @@ a {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  transition: transform 4s ease-in-out, filter 4s ease-in-out, opacity 4s ease-in-out;
 }
 .heroSection .hiddenContent {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(100%);
-  transition: transform 0.9s ease-in-out, filter 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  transition: transform 4s ease-in-out, filter 4s ease-in-out, opacity 4s ease-in-out;
 }
 .heroSection .imgPart {
-  transition-delay: 300ms;
+  transition-delay: 800ms;
 }
 .heroSection .contentPart {
-  transition-delay: 500ms;
+  transition-delay: 800ms;
 }
 .heroSection .show {
   opacity: 1;
@@ -721,4 +721,57 @@ a {
 }
 .gotoTop i {
   font-size: 1.7em;
+}
+
+.hide-scrollbar {
+  overflow: hidden;
+}
+
+.popupBeforePage {
+  z-index: 111;
+  top: 0px;
+  left: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: fixed;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  visibility: hidden;
+  flex-direction: column;
+}
+.popupBeforePage .h1BeforePage {
+  font-size: 3rem;
+  font-family: great vibes, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+}
+.popupBeforePage .h2BeforePage {
+  font-size: 1.5rem;
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 1px solid;
+}
+
+.dsplayVisible {
+  visibility: visible;
+}
+
+.scaleonpopupBeforePage {
+  animation-name: bigZoom;
+  animation-duration: 4s;
+}
+
+@keyframes bigZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
 }/*# sourceMappingURL=style.css.map */
