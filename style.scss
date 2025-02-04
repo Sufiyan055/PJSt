@@ -569,10 +569,45 @@ a {
   }
 }
 
+/*  Contact Details */
+
+.strongContactDetails {
+  margin-top: 78px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  @include flexcontent(0);
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.contactDetails {
+  @include flexcontent(25px);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #d8e5eb;
+  padding: 55px 2px;
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    border: 1px solid;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .contactDetails {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
 /* Footer */
 
 .FooterSection {
-  margin-top: 62px;
   background-color: #e9edef;
   padding: 5px;
   .footerMain {
@@ -598,6 +633,19 @@ a {
       p {
         font-family: Poppins, sans-serif;
         font-size: 0.9rem;
+      }
+      .addressFooterHead {
+        text-decoration: none;
+        color: #000;
+        i {
+          margin-right: 2px;
+        }
+        .spanaddressFooterHead {
+          text-decoration: none;
+          font-family: Poppins, sans-serif;
+          border: none;
+          font-weight: 300;
+        }
       }
     }
     .bestSeller {
@@ -753,7 +801,7 @@ a {
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease-in-out;
-  visibility: hidden;
+  visibility: visible;
   flex-direction: column;
   .h1BeforePage {
     font-size: 3rem;
@@ -771,7 +819,7 @@ a {
   }
 }
 .dsplayVisible {
-  visibility: visible;
+  visibility: hidden;
 }
 .scaleonpopupBeforePage {
   animation-name: bigZoom;
