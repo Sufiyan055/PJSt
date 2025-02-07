@@ -582,11 +582,14 @@ a {
 }
 
 .contactDetails {
-  @include flexcontent(25px);
-  justify-content: space-evenly;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   background-color: #d8e5eb;
-  padding: 55px 2px;
+
   a {
     text-decoration: none;
     color: #000;
@@ -595,12 +598,67 @@ a {
     padding: 4px 8px;
     border-radius: 2px;
   }
+  .contactBoxDetail {
+    height: 100%;
+    padding: 55px 2px;
+    border: 1px solid;
+  }
+  .phone {
+    width: 25%;
+    background: rgb(46, 217, 46);
+  }
+  .whatsapp {
+    width: 25%;
+    background: #25d366;
+  }
+  .emailId {
+    width: 50%;
+    background: lightskyblue;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .contactDetails {
+    a {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .contactDetails {
+    a {
+      font-size: 1rem;
+    }
+    .phone,
+    .whatsapp {
+      width: 50%;
+    }
+    .emailId {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 377px) {
   .contactDetails {
     a {
-      font-size: 1rem;
+      font-size: 0.7rem;
+    }
+    .contactBoxDetail {
+      padding: 10px 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 284px) {
+  .contactDetails {
+    a {
+      font-size: 0.7rem;
+    }
+    .contactBoxDetail {
+      padding: 10px 2px;
+      width: 100%;
     }
   }
 }
@@ -789,7 +847,7 @@ a {
   overflow: hidden;
 }
 .popupBeforePage {
-  z-index: 111;
+  z-index: 11111;
   top: 0px;
   left: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

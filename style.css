@@ -569,13 +569,12 @@ a {
 
 .contactDetails {
   display: flex;
-  justify-content: center;
+  place-content: center;
   align-items: center;
-  gap: 25px;
-  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   background-color: #d8e5eb;
-  padding: 55px 2px;
 }
 .contactDetails a {
   text-decoration: none;
@@ -585,10 +584,56 @@ a {
   padding: 4px 8px;
   border-radius: 2px;
 }
+.contactDetails .contactBoxDetail {
+  height: 100%;
+  padding: 55px 2px;
+  border: 1px solid;
+}
+.contactDetails .phone {
+  width: 25%;
+  background: rgb(46, 217, 46);
+}
+.contactDetails .whatsapp {
+  width: 25%;
+  background: #25d366;
+}
+.contactDetails .emailId {
+  width: 50%;
+  background: lightskyblue;
+}
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 1087px) {
+  .contactDetails a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 815px) {
   .contactDetails a {
     font-size: 1rem;
+  }
+  .contactDetails .phone,
+  .contactDetails .whatsapp {
+    width: 50%;
+  }
+  .contactDetails .emailId {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 377px) {
+  .contactDetails a {
+    font-size: 0.7rem;
+  }
+  .contactDetails .contactBoxDetail {
+    padding: 10px 2px;
+  }
+}
+@media screen and (max-width: 284px) {
+  .contactDetails a {
+    font-size: 0.7rem;
+  }
+  .contactDetails .contactBoxDetail {
+    padding: 10px 2px;
+    width: 100%;
   }
 }
 /* Footer */
@@ -778,7 +823,7 @@ a {
 }
 
 .popupBeforePage {
-  z-index: 111;
+  z-index: 11111;
   top: 0px;
   left: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
