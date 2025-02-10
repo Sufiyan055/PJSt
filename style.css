@@ -569,12 +569,24 @@ a {
 
 .contactDetails {
   display: flex;
-  place-content: center;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  gap: 2px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #d8e5eb;
+  /* .phone {
+    width: 25%;
+    background: rgb(46, 217, 46);
+  }
+  .whatsapp {
+    width: 25%;
+    background: #25d366;
+  }
+  .emailId {
+    width: 50%;
+    background: lightskyblue;
+  } */
 }
 .contactDetails a {
   text-decoration: none;
@@ -587,19 +599,6 @@ a {
 .contactDetails .contactBoxDetail {
   height: 100%;
   padding: 55px 2px;
-  border: 1px solid;
-}
-.contactDetails .phone {
-  width: 25%;
-  background: rgb(46, 217, 46);
-}
-.contactDetails .whatsapp {
-  width: 25%;
-  background: #25d366;
-}
-.contactDetails .emailId {
-  width: 50%;
-  background: lightskyblue;
 }
 
 @media screen and (max-width: 1087px) {
@@ -608,18 +607,20 @@ a {
   }
 }
 @media screen and (max-width: 815px) {
+  .contactDetails {
+    /* .phone,
+    .whatsapp {
+      width: 50%;
+    }
+    .emailId {
+      width: 100%;
+    } */
+  }
   .contactDetails a {
     font-size: 1rem;
   }
-  .contactDetails .phone,
-  .contactDetails .whatsapp {
-    width: 50%;
-  }
-  .contactDetails .emailId {
-    width: 100%;
-  }
 }
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 548px) {
   .contactDetails a {
     font-size: 0.7rem;
   }

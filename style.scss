@@ -582,11 +582,8 @@ a {
 }
 
 .contactDetails {
-  display: flex;
-  place-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  @include flexcontent(2px);
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #d8e5eb;
 
@@ -601,9 +598,8 @@ a {
   .contactBoxDetail {
     height: 100%;
     padding: 55px 2px;
-    border: 1px solid;
   }
-  .phone {
+  /* .phone {
     width: 25%;
     background: rgb(46, 217, 46);
   }
@@ -614,7 +610,7 @@ a {
   .emailId {
     width: 50%;
     background: lightskyblue;
-  }
+  } */
 }
 
 @media screen and (max-width: 1087px) {
@@ -630,17 +626,17 @@ a {
     a {
       font-size: 1rem;
     }
-    .phone,
+    /* .phone,
     .whatsapp {
       width: 50%;
     }
     .emailId {
       width: 100%;
-    }
+    } */
   }
 }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 548px) {
   .contactDetails {
     a {
       font-size: 0.7rem;
